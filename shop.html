@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nerds-main-logo">
+                <a href="" class="navigation-logo"><img src="img/nerds-main-logo.jpg" class="nerds-main-log" alt=""></a>
+            </div>
+            <ul class="main-navigation">
+                <li><a href="index.html">Студія</a></li>
+                <li><a href="clients.html">Клієнти</a></li>
+                <li class="active"><a href="shop.html">Магазин</a></li>
+                <li class="new-active"><a href="#contact">Контакти</a></li>
+            </ul>
+            <ul class="navigation-basket bascket">
+                <li> <a href=""><img src="img/bascket-logo.jpg" class="mini-logo" alt=""></a>
+                </li>
+                <li class="bascket-active"><a>Корзина</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="header">
+        <div class="header-text">
+            <h1 class="header-title">Магазин готових шаблонів</h1>
+        </div>
+    </header>
+    <main>
+        <section class="main-catalog">
+            <section class="filter">
+                <article class="range-filter">
+                    <p class="filter-title title1">Вартість:</p>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div style="width: 70%;" class="bar"></div>
+                        </div>
+                        <div class="toggle min-toggle"></div>
+                        <div class="toggle max-toggle"></div>
+                    </div>
+                    <div class="price-controls">
+                        від <input class="min-price" type="text" value="0">
+                        до <input class="max-price" type="text" value="15 000">
+                    </div>
+                </article>
+                <article class="sitka">
+                    <p class="filter-title title2">Сітка:</p>
+                    <label for="sitka-1" class="label-sitka">
+                        <input type="radio" id="sitka-1" class="radio-btn-sitka" name="toggle" checked>
+                        <span class="fake-radio"></span>
+                        <span class="sitka-text">Адаптивна</span>
+                    </label>
+                    <label for="sitka-2" class="label-sitka">
+                        <input type="radio" id="sitka-2" class="radio-btn-sitka" name="toggle">
+                        <span class="fake-radio"></span>
+                        <span class="sitka-text">Фіксована</span>
+                    </label>
+                    <label for="sitka-3" class="label-sitka">
+                        <input type="radio" id="sitka-3" class="radio-btn-sitka" name="toggle">
+                        <span class="fake-radio"></span>
+                        <span class="sitka-text">Резинова</span>
+                    </label>
+                </article>
+                <article class="properties">
+                    <p class="filter-title title3">Особливості:</p>
+                    <label for="check-box-1" class="label-properties">
+                        <input id="check-box-1" type="checkbox" class="label-properties-checkbox">
+                        <span class="fake-checkbox"></span>
+                        <span class="properties-text">Слайдер</span>
+                    </label>
+                    <label for="check-box-2" class="label-properties">
+                        <input id="check-box-2" type="checkbox" class="label-properties-checkbox">
+                        <span class="fake-checkbox"></span>
+                        <span class="properties-text"> Блок переваг</span>
+                    </label>
+                    <label for="check-box-3" class="label-properties">
+                        <input id="check-box-3" type="checkbox" class="label-properties-checkbox">
+                        <span class="fake-checkbox"></span>
+                        <span class="properties-text">Новини</span>
+                    </label>
+                    <label for="check-box-4" class="label-properties">
+                        <input id="check-box-4" type="checkbox" class="label-properties-checkbox">
+                        <span class="fake-checkbox"></span>
+                        <span class="properties-text">Галерея</span>
+                    </label>
+                    <label for="check-box-5" class="label-properties">
+                        <input id="check-box-5" type="checkbox" class="label-properties-checkbox">
+                        <span class="fake-checkbox"></span>
+                        <span class="properties-text">Корзина</span>
+                    </label>
+                </article>
+                <button class="filter-button">Показати</button>
+            </section>
+            <section class="catalog">
+                <div class="text-decoration">
+                    <span class="sort">Сортувати:</span>
+                    <span class="sort-price">По ціні</span>
+                    <span class="sort-type">По типу</span>
+                    <span class="sort-name">По назві</span>
+                    <span class="sort-bot">&#9660;</span>
+                    <span class="sort-up">&#9650;</span>
+                </div>
+                <section class="catalog-titles">
+                    <article class="catalog-pink">
+                        <div class="photo-container">
+                            <span class="circle first"></span>
+                            <span class="circle second"></span>
+                            <span class="circle third"></span>
+                        </div>
+                        <div class="catalog-img-container">
+                            <img src="img/catalog-pink.jpg" class="catalog-img"  alt="">
+                        </div>
+
+                        <div class="container-price">
+                            <div class="text">
+                                <h1>Pink App</h1>
+                                <p>Продуктовий лендинг додатку для IOS та Android</p>
+                                <a href="#" class="bt">3300 ГРН.</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="catalog-barber">
+                        <div class="photo-container">
+                            <span class="circle first"></span>
+                            <span class="circle second"></span>
+                            <span class="circle third"></span>
+                        </div>
+                        <div class="catalog-img-container">
+                            <img src="img/catalog-barber.jpg" class="catalog-img"  alt="">
+                        </div>
+                        <div class="container-price">
+                            <div class="text">
+                                <h1>Barbershop App</h1>
+                                <p>Продуктовиoй лендинг додатку для IOS та Android</p>
+                                <a href="#" class="bt">3500 ГРН.</a>
+                            </div>
+                        </div>
+                        </div>
+
+                    </article>
+                    <article class="catalog-mishka">
+                        <div class="photo-container">
+                            <span class="circle first"></span>
+                            <span class="circle second"></span>
+                            <span class="circle third"></span>
+                        </div>
+                        <div class="catalog-img-container">
+                            <img src="img/catalog-mishka.jpg" class="catalog-img" alt="">
+                        </div>
+                        <div class="container-price">
+                            <div class="text">
+                                <h1>Mishka App</h1>
+                                <p>Продуктовий лендинг додатку для IOS та Android</p>
+                                <a href="#" class="bt">3700 ГРН.</a>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article class="catalog-pink2">
+                        <div class="photo-container">
+                            <span class="circle first"></span>
+                            <span class="circle second"></span>
+                            <span class="circle third"></span>
+                        </div>
+                        <div class="catalog-img-container">
+                            <img src="img/catalog-pink.jpg" class="catalog-img" alt="">
+                        </div>
+                        <div class="container-price">
+                            <div class="text">
+                                <h1>Pink App</h1>
+                                <p>Продуктовий лендинг додатку для IOS та Android</p>
+                                <a href="#" class="bt">3300 ГРН.</a>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article class="catalog-teach">
+                        <div class="photo-container">
+                            <span class="circle first"></span>
+                            <span class="circle second"></span>
+                            <span class="circle third"></span>
+                        </div>
+                        <div class="catalog-img-container">
+                            <img src="img/catalog-teach.jpg" class="catalog-img"alt="">
+                        </div>
+                        <div class="container-price">
+                            <div class="text">
+                                <h1>Teaching App</h1>
+                                <p>Продуктовий лендинг додатку для IOS та Android</p>
+                                <a href="#" class="bt">3800 ГРН.</a>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article class="catalog-beer">
+                        <div class="photo-container">
+                            <span class="circle first"></span>
+                            <span class="circle second"></span>
+                            <span class="circle third"></span>
+                        </div>
+                        <div class="catalog-img-container">
+                            <img src="img/catalog-beer.jpg" class="catalog-img"  alt="">
+                        </div>
+                        <div class="container-price">
+                            <div class="text">
+                                <h1>Beer App</h1>
+                                <p>Продуктовий лендинг додатку для IOS та Android</p>
+                                <a href="#" class="bt">3400 ГРН.</a>
+                            </div>
+                        </div>
+
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section class="page-navigation">
+            <a href="" class="catalog-page first-page">1</a>
+            <a href="" class="catalog-page second-page">2</a>
+            <a href="" class="catalog-page third-page">3</a>
+            <a href="" class="navigation-btn">Наступна</a>
+        </section>
+    </main>
+    <footer>
+        <section class="contact">
+            <img src="img/map.jpg" class="map" alt="map">
+            <div class="contact-info" id="contact">
+                <h3 class="contact-title">Nerds design studio</h3>
+                <p>33000, Рівне, вул.Чорновола, буд. 23/54</p>
+                <p class="contact-phone">тел. +38 (000) 000 00 00</p>
+                <a href="" class="contact-link">Напишіть нам</a>
+            </div>
+            <div class="modal-content">
+                <button class="modal-content-close" type="button" title="Закрити">Закрити</button>
+                <h2>Напишіть нам</h2>
+                <p>Напишіть ваше ім'я, котанктні дані та текст повідомлення</p>
+                <form class="login-form" action="" method="post">
+                    <input type="text" class="user-name" name="user-name" placeholder="Введіть ваше ім'я" required>
+                    <input type="text" class="user-contact" name="user-contact" placeholder="Ваш телефон або E-mail"
+                        required>
+                    <input type="text" class="user-text" name="user-text" placeholder="Введіть текст повідомлення"
+                        required>
+                    <button class="send-massage-btn" type="submit">Надіслати</button>
+                </form>
+
+
+            </div>
+        </section>
+        <section>
+            <div class="modal-content-bascket">
+                <button class="modal-content-bascket-close" type="button" title="Закрити">Закрити</button>
+                <h2>Кошик для ваших вподобань</h2>
+                <img src="img/bascket-background.jpg"  class="bascket-background" alt="">
+                <button class="send-massage-btn-bascket" type="submit">Купити</button>
+            </div>
+        </section>
+        <section class="social-network">
+            <a href="https://vk.com" class="vk" alt="VK"></a>
+            <a href="https://www.facebook.com" class="fb" alt="FB"></a>
+            <a href="https://www.instagram.com" class="insta" alt="Insta"></a>
+            <p class="social-network-text"><span class="social-network-span"> Давайте Дружити - це вигідно!</span>
+                <br>
+                Знижка 10% для друзів з соціальних мереж
+            </p>
+        </section>
+    </footer>
+    <div class="to-top">Вверх!</div>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
